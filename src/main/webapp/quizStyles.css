@@ -1,0 +1,841 @@
+    	*, *::before, *::after 
+    	{
+		box-sizing: border-box;
+		}
+
+		
+			
+		body
+		{
+			padding: 0;
+			Margin: 0;
+			background-color:black;
+		}		
+				
+		@font-face
+		{
+			font-family: myFirstFont;
+			src:url(ARCADE_N.TTF);	
+		}
+		
+		@font-face
+		{
+			font-family: myFirstFont1;
+			src:url(ARCADE_I.TTF);	
+		}
+		
+		@font-face
+		{
+			font-family: myFirstFont2;
+			src:url(ARCADE_R.TTF);	
+		}
+		
+		h1
+		{
+			color:rgb(0, 0, 0);
+			justify-content: center;
+			text-align:center;
+			font-size: 5vh;
+			font-family: myFirstFont;
+			color:rgb(255,196,75);
+			margin-top: 5vh;		
+		}
+		
+		h2
+		{
+			color:rgb(0, 0, 0);
+			justify-content: center;
+			text-align:center;
+			font-size: 3vh;
+			font-family: myFirstFont;
+			padding: 2vh;		
+		}
+		
+		@keyframes navTitleAnimation 
+		{
+ 	 	0% {font-family: myFirstFont; margin-right: 30vw; }
+ 		5%{font-family: myFirstFont1; margin-right: 28vw;}
+		10% {font-family: myFirstFont; margin-right: 26vw;}
+		15% {font-family: myFirstFont1; margin-right: 24vw;}
+		20% {font-family: myFirstFont; margin-right: 22vw;}
+		25% {font-family: myFirstFont1; margin-right: 20vw;}
+		30% {font-family: myFirstFont; margin-right: 18vw; }
+ 		35%{font-family: myFirstFont1; margin-right: 16vw;}
+		40% {font-family: myFirstFont; margin-right: 14vw;}
+		45% {font-family: myFirstFont1; margin-right: 12vw;}
+		50% {font-family: myFirstFont; margin-right: 10vw;}
+		55% {font-family: myFirstFont; margin-right: 12vw; }
+ 		60%{font-family: myFirstFont1; margin-right: 14vw;}
+		65% {font-family: myFirstFont; margin-right: 16vw;}
+		70% {font-family: myFirstFont1; margin-right: 18vw;}
+		75% {font-family: myFirstFont; margin-right: 20vw;}
+		80% {font-family: myFirstFont1; margin-right: 22vw;}
+		85% {font-family: myFirstFont; margin-right: 24vw; }
+ 		90%{font-family: myFirstFont1; margin-right: 26vw;}
+		95% {font-family: myFirstFont; margin-right: 28vw;}
+		100% {font-family: myFirstFont1; margin-right: 30vw;}
+		}
+		
+		@keyframes navTitleAnimation1
+		{
+ 	 	0% {margin-right: 50vw; }
+ 		10%{ margin-right: 45vw;}
+		20% {margin-right: 40vw;}
+		30% {margin-right: 35vw;}
+		40% {margin-right: 30vw;}
+		50% {margin-right: 25vw;}
+		60% {margin-right: 20vw; }
+ 		70% {margin-right: 15vw;}
+		80% {margin-right: 10vw;}
+		90% {margin-right: 5vw;}
+		100% {margin-right: 0vw;}
+		}
+		
+		
+		
+		.navTitle
+		{
+			color:rgb(0, 0, 0);
+			height: 5vh; 
+			font-size: 4vh;
+			justify-content: center;
+			text-align:center;
+			font-family: myFirstFont;
+			animation: navTitleAnimation;	
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+			margin-right: 30vw;
+		}		
+		
+		h3
+		{
+			font-size: 2vh;
+			font-family: myFirstFont;
+			font-style: italic;
+		}
+	
+		.topContainer
+		{
+			display: flex;			
+			justify-content: center;
+			align-items:center;
+		}
+		
+		.trueFalseC
+		{
+			height:60vh;
+    		width:80vw;
+			justify-content: center;
+			align-items:center;		
+			text-align:center;
+			background-color:rgb(255,196,75);
+			border-style: double;
+			border-color:rgb(78,72,72);
+			border-width:thick;
+		}
+		.trueFalseBtns
+		{
+			display: flex;	
+			justify-content: space-between;
+			border: 5px;
+			align-items:center;		
+		}
+		
+		.tFBtns
+		{
+			width: 25vw; 
+            height: 15vh; 
+            margin-right: 5vw;
+            margin-left: 5vw;
+            margin-top: 3vh;
+            font-size: 2vh;
+            background-color: black;
+            color:rgb(255,196,75);
+    		font-size: 2vh;
+    		font-weight: bold;
+			font-family: myFirstFont;
+			border-style: double;
+			border-color:rgb(78,72,72);
+			border-width:thick;
+		}
+		
+		.multiChoiceC
+		{
+			height:60vh;
+    		width:80vw;
+			justify-content: center;
+			align-items:center;		
+			text-align:center;
+			background-color:rgb(255,196,75);
+			border-style: double;
+			border-color:rgb(78,72,72);
+			border-width:thick;
+		}
+		.MultipleChoiceBtns
+		{
+			display: flex;	
+			justify-content: space-between;
+			border: 5px;
+			border-color: black;
+			align-items:center;		
+		}
+		
+		.mCBtns
+		{
+			width: 25vw; 
+            height: 15vh; 
+            margin-right: 3vw;
+            margin-left: 3vw;
+            margin-top: 3vh;
+           	font-family: myFirstFont;
+           	background-color:rgb(255,196,75);
+           	color:rgb(255,196,75);
+            font-size: 2vh;
+			font-weight: bold;
+			border-style: double;
+			border-color:rgb(78,72,72);
+			border-width:thick;
+		}
+		
+		.nextBtn
+		{
+			align-items:center;		
+			margin-top: 5vh;
+			background-color:black;
+    		font-size: 3vh;
+    		font-weight: bold;
+			font-family: myFirstFont;
+		}
+		
+		.submitFDiv
+		{	
+			height:60vh;
+    		width:80vw;
+			justify-content: center;
+			align-items:center;		
+			text-align:center;
+			background-color:rgb(255,196,75);
+			border-style: double;
+			border-color:rgb(78,72,72);
+			border-width:thick;
+		}
+		
+		.submitBtns
+		{
+			display: flex;	
+			justify-content: space-between;
+			border: 5px;
+			border-color: black;
+			align-items:center;		
+		}
+		
+		.sBtns
+		{
+			width: 25vw; 
+            height: 10vh; 
+            margin-right: 5vw;
+            margin-left: 5vw;
+            font-size: 2vh;
+            background-color: black;
+            color:rgb(255,196,75);
+    		font-size: 2vh;
+    		font-weight: bold;
+			font-family: myFirstFont;
+			border-style: double;
+			border-color:rgb(78,72,72);
+			border-width:thick;
+		}
+		
+		.score
+		{
+			font-size: 5vh;	
+			font-weight: bold;
+			font-family: myFirstFont;
+			margin-bottom: 3vh;	
+		}
+    	
+    	.start-btn
+    	{	
+    		height:60vh;
+    		width:80vw;
+    		background-color:rgb(255,196,75);
+    		font-size: 3vh;
+    		font-weight: bold;
+			font-family: myFirstFont;
+    		color:black;
+    		border-style: double;
+			border-color:rgb(78,72,72);
+			border-width:thick;
+    	}
+    	
+    	.sSubmit
+    	{	
+    		width: 25vw; 
+            height: 10vh; 
+            margin-right: 5vw;
+            margin-left: 5vw;
+            margin-top: 6vh;
+            font-size: 2vh;
+            color:rgb(255,196,75);
+    		font-size: 3vh;
+    		font-weight: bold;
+			font-family: myFirstFont;
+			font-style: Bold;
+			background-color:black;
+    		border-style: double;
+			border-color:rgb(78,72,72);
+			border-width:thick;
+        }
+        
+        .takeQ
+        {
+        	height:70vh;
+    		width:50vw;
+			justify-content: center;
+			align-items:center;		
+			text-align:center;
+			background-color:rgb(255,196,75);
+			border-style: double;
+			border-color:rgb(78,72,72);
+			border-width:thick;	
+			
+        }
+        
+        .takeQ1
+        {
+        	height:70vh;
+    		width:50vw;
+			justify-content: center;
+			align-items:center;		
+			text-align:center;
+			background-color:white;
+			border-style: double;
+        }
+        
+        .image
+        {
+        	width: 20vw; 
+            height: 30vh; 
+        }
+        
+        .image1
+        {
+        	width: 12vw; 
+            height: 20vh; 
+        }
+        
+        .qDetails
+        {
+        	font-size: 2vh;
+        	font-family: myFirstFont;
+        }
+        
+        .qDetails1
+        {
+        	font-size: 1vh;
+        	font-family: myFirstFont;
+        }
+        
+        .takeQBtn
+        {
+			border: 5px;
+			border-color: black;
+			align-items:center;		
+			background-color: black;
+			width: 20vw; 
+            height: 8vh; 
+            font-family: myFirstFont;
+            font-size: 2vh;
+            color:rgb(255,196,75);
+			border-style: double;
+			border-color: rgb(78,72,72);
+			border-width:thick;		
+        }
+        
+        .tableD
+        {
+        	height:45vh;
+    		width:40vw;
+    		margin-left: 5vw;
+    		margin-right: 5vw;
+			justify-content: center;
+			align-items:center;		
+			text-align:center;
+			background-color:black;
+			border-style: double;
+			overflow-y: scroll;   
+			border-style: double;
+			border-color: rgb(78,72,72);
+			border-width:thick;
+        }
+        
+        .leaderboardT
+        {
+        	font-family: myFirstFont;
+            font-size: 5vh;
+            color:black;
+        }
+        
+        table.leaderT, th, td
+        {
+        	border: .3vh solid;
+        	border-color:rgb(78,72,72);
+        }
+        
+        th.cUser, th.cDate
+        {
+        	width: 40vh;
+        }
+        
+         th.cScore
+        {
+        	width: 15vh;
+        }
+        
+       	tr.heading
+        {
+        	line-height: 4vh;
+        	font-size: 2.5vh;
+        	font-family: myFirstFont1;
+        	background-color: black;
+        	color: rgb(255,196,75);
+        	font-weight: bold;
+       	}
+        
+        tr.row
+        {
+        	font-size: 1.5vh;
+        	line-height: 4vh;
+        	font-family: myFirstFont1;
+        	font-size:1.5vh;
+        	background-color: rgb(255,196,75);
+        	font-weight: 500;
+        }
+        
+        .navBtns
+		{
+			width: 10vw; 
+            height: 5vh; 
+            font-size: 2vh;
+            font-family: myFirstFont;
+			background-color:rgb(255,196,75);
+            border-style: double;
+			border-color: rgb(78,72,72);
+			border-width:thick;
+		}
+		
+		.navBar
+		{	
+			display:flex;
+			width: 100vw;
+			align-items:right;
+			justify-content:right;
+			background-color:rgb(255,196,75);
+			border-style: double;
+			border-color: rgb(78,72,72);
+			border-width:thick;		
+		}
+		
+		.searchForm
+		{	
+			display:flex;
+			width: 100vw;
+			align-items:center;
+			justify-content: center;	
+		}
+		
+		.searchQName
+		{
+			font-family: MyFirstFont;
+			width: 20vw; 
+            height: 5vh; 
+            font-size: 2vh;
+            text-align:center;
+            margin-right: 2vw;
+		}
+		
+		.searchBtn
+ 		{	
+ 			width: 20vw; 
+            height: 5vh; 
+            font-size: 2vh;
+            background-color:rgb(255,196,75);
+            border-style: double;
+			border-color:rgb(78,72,72);
+			border-width:thick;
+			font-family: myFirstFont; 
+		}
+		
+		.sContainer
+		{
+			display:flex;
+			align-items:center;
+			justify-content: center;	
+		}
+		
+		
+		.sQuiz
+		{
+			height:92vh;
+    		width:60vw;
+    		background-color:rgb(255,196,75);
+			justify-content: center;
+			align-items:center;		
+			text-align:center;
+			border-style: double;
+			border-color:rgb(78,72,72);
+			border-width:thick;
+			margin-bottom:5vh;
+		}
+		
+		.quizDescC
+		{
+			display:flex;
+			align-items:center;
+			justify-content: center;
+		}
+		
+		.sFormT
+		{
+			font-family: myFirstFont; 
+			font-size:2vh;
+			font-style:bold;
+			margin-right: 1vw;
+		}
+		
+		.sFormE
+		{
+			font-family: myFirstFont; 
+			font-size:2vh;
+			color: rgb(78,72,72);
+		}
+		
+		.seFormT
+		{
+			font-family: myFirstFont; 
+			font-size:1.5vh;
+			font-style:bold;
+			margin-right: 1vw;
+		}
+		
+		.seFormE
+		{
+			font-family: myFirstFont; 
+			font-size:1.5vh;
+			font-style:bold;
+			margin-right: .5vw;
+			color: rgb(78,72,72);
+		}
+		
+		
+		.searchT
+		{
+			color:black;
+			font-family:myFirstFont1;
+		}
+		
+		.loginC
+		{
+			height:30vh;
+    		width:70vw;
+			justify-content: center;
+			margin-bottom:10vh;
+			align-items:center;		
+			text-align:center;
+			background-color:rgb(255,196,75);
+			border-style: double;
+		}
+		
+		.usernameE
+		{
+			font-family: MyFirstFont;
+			width: 20vw; 
+            height: 5vh; 
+            font-size: 2vh;
+            margin-right: 2vw;
+            text-align:center
+		}
+		
+		.passwordE
+		{
+			font-family: MyFirstFont;
+			width: 20vw; 
+            height: 5vh; 
+            font-size: 2vh;
+            margin-right: 2vw;
+            text-align:center;
+		}
+		
+		.loginBtn
+ 		{	
+ 			width: 15vw; 
+            height: 5vh; 
+            font-size: 2vh;
+            color:rgb(255,196,75);
+            background-color:black;
+            border-style: groove;
+            border-color: WhiteSmoke;
+            font-family: MyFirstFont;
+		}
+		
+		.error
+		{
+			font-size: 2vh;
+			font-family: MyFirstFont;
+			color: red;
+		}
+		
+		.searchQBtn
+		{
+			margin-top:15vh;
+			height: 30vh;
+			width: 30vw;
+			background-color:rgb(255,196,75);
+            border-color: WhiteSmoke;
+            color: black;
+            border-style: double;
+			border-color:rgb(78,72,72);
+			border-width:thick;
+			margin-right:7vw;
+		}
+		
+		.createQBtn
+		{
+			margin-top:15vh;
+			height: 30vh;
+			width: 30vw;
+			background-color:rgb(255,196,75);
+			color:black;
+            border-style: double;
+			border-color:rgb(78,72,72);
+			border-width:thick;
+			margin-left:7vw;
+		}
+		
+		.createQForm
+		{
+			height:70vh;
+    		width:70vw;
+    		font-size: 2vh;
+			font-family: verdana, sans-serif;
+			justify-content: center;
+			margin-bottom:10vh;
+			align-items:center;		
+			text-align:center;
+			background-color:rgb(255,196,75);
+    		border-style: double;
+			border-color:rgb(78,72,72);
+			border-width:thick;
+		}
+		
+		.createQBtn1
+		{
+			margin-top:.2vh;
+			height: 15vh;
+			width: 35vw;
+			background-color:black;
+    		font-size: 3vh;
+    		font-weight: bold;
+			font-family: myFirstFont;
+    		color:rgb(255,196,75);
+    		border-style: double;
+			border-color:rgb(78,72,72);
+			border-width:thick;
+		}
+		
+		.fText
+		{
+			font-size: 1.3vh;
+			font-family: myFirstFont2;
+		}
+		
+		.qTitleC
+		{
+			padding:.1vh;
+			font-family: myFirstFont;			
+		}
+		
+		.qDiffC
+		{
+			padding:.1vh;
+			margin-left: 3vw;				
+		}
+		
+		.qAmountC
+		{
+			padding:.1vh;
+			margin-right: 3vw;			
+		}
+		
+		.qTitleE
+		{
+			height:4vh;
+			width:20vw;
+			text-align:center;
+			color:black;
+    		border-style: double;
+			border-color:rgb(78,72,72);
+			border-width:thick;
+			color:black;
+    		border-style: double;
+			border-color:rgb(78,72,72);
+			border-width:thick;
+		}
+		
+		.qDescE
+		{
+			height:10vh;
+			width:30vw;
+			text-align:center;
+			color:black;
+    		border-style: double;
+			border-color:rgb(78,72,72);
+			border-width:thick;
+		}
+		
+		.formFlex
+		{
+			display:flex;
+			align-items:center;
+			justify-content: center;	
+		}
+		
+		.qAmountE
+		{
+			height:3vh;
+			width:4vw;
+			text-align:center;
+			color:black;
+    		border-style: double;
+			border-color:rgb(78,72,72);
+			border-width:thick;
+		}
+		
+		.qDiffE
+		{
+			height:3vh;
+			width:7vw;
+			text-align:center;
+			color:black;
+    		border-style: double;
+			border-color:rgb(78,72,72);
+			border-width:thick;
+		}
+		
+		.fileE
+		{
+			width: 20vw; 
+            height: 5vh; 
+            font-size: 2vh;
+            border-style: groove;
+            border-color: WhiteSmoke;
+            background-color: WhiteSmoke;
+            font-family: verdana, sans-serif;
+		}
+		
+		.qQuestionChooser
+		{
+			display:flex;
+			align-items:center;
+			justify-content: center;
+			padding:1vh;
+		}
+		
+		.qQuestionChooser1
+		{
+			display:flex;
+			align-items:center;
+			justify-content: center;
+			padding:2vh;
+			margin-bottom:2vh;
+		}
+		
+		.questionInput
+		{
+			height:100vh;
+    		width:70vw;
+			justify-content: center;
+			margin-bottom:10vh;
+			align-items:center;		
+			text-align:center;
+			background-color:rgb(255,196,75);
+    		font-size: 3vh;
+    		font-weight: bold;
+			font-family: myFirstFont;
+    		color:black;
+    		border-style: double;
+			border-color:rgb(78,72,72);
+			border-width:thick;
+		}
+		
+		.tFC
+		{
+			width: 15vw; 
+            height: 6vh; 
+            font-size: 2vh;
+            text-align:center;
+           	margin-right: 1.5vw;
+           	margin-left: 1.5vw;
+            border-style: double;
+			border-color:rgb(78,72,72);
+			border-width:thick;
+            background-color:black;
+            font-family: myFirstFont;
+            color:rgb(255,196,75);
+		}
+		
+		.qOptionC
+		{
+			display:flex;
+			align-items:center;
+			justify-content: center;
+			padding:1vh;
+		}
+		
+		.qOptionE
+		{
+			margin-right:1vw;
+			margin-left:1vw;
+		}
+		
+		.popE
+		{
+			color:rgb(255,196,75);
+		}
+		
+		.sQuiz1
+		{
+			height:65vh;
+    		width:60vw;
+    		background-color:rgb(255,196,75);
+			justify-content: center;
+			align-items:center;		
+			text-align:center;
+			border-style: double;
+			border-color:rgb(78,72,72);
+			border-width:thick;
+			margin-bottom:5vh;
+		}
+		
+		.searchT1
+		{
+			color:black;
+			font-family:myFirstFont1;
+			font-size:2.5vh;
+			padding: 1vh;	
+			margin-top: 2vh;
+		}
+		
+		.sFormT1
+		{
+			font-family: myFirstFont; 
+			font-size:1.2vh;
+			margin-right: .5vw;
+		}
+		
+		.sFormE1
+		{
+			font-family: myFirstFont; 
+			font-size:1.2vh;
+			color: rgb(78,72,72);
+		}
